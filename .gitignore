@@ -4,4 +4,4 @@ dist/
 target/
 .lein-failures
 .lein-repl-history
-output
+output/*.js
