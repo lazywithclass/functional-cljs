@@ -1,0 +1,7 @@
+*.swp
+.repl/
+dist/
+target/
+.lein-failures
+.lein-repl-history
+output

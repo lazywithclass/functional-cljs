@@ -1,3 +1,5 @@
+// FUNCTIONS THAT NEED TO BE TRANSLATED INTO CLOJURESCRIPT
+
 function existy(x) {
   // using the loose inequality operator is possible to distinguish from
   // null, undefined, and everything else
