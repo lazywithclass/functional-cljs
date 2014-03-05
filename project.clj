@@ -7,7 +7,7 @@
   :plugins [[lein-cljsbuild "1.0.2"] [com.cemerick/clojurescript.test "0.2.2"]]
   :cljsbuild {
     :builds [{
-      :source-paths ["test-cljs" "src-cljs/"]
+      :source-paths ["test-cljs"]
       :compiler {
         :output-to "output/main.js"
         :optimizations :advanced
