@@ -9,7 +9,7 @@
     :builds [{
       :source-paths ["src-cljs/"]
       :compiler {
-        :output-to "dist/js/main.js"
+        :output-to "output/main.js"
         :optimizations :advanced
         :target :nodejs
       }
