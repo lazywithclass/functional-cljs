@@ -1,13 +1,13 @@
 (defproject functional-cljs "0.0.1"
   :description "Humble attempt to translate Fogus' functions found in Functional JavaScript into ClojureScript"
-  :source-paths ["src-cljs/"]
+  :source-paths ["src"]
   :dependencies [[org.clojure/clojure "1.5.1"]
                 [org.clojure/clojurescript "0.0-2014"
                 :exclusions [org.apache.ant/ant]]]
   :plugins [[lein-cljsbuild "1.0.2"] [com.cemerick/clojurescript.test "0.2.2"]]
   :cljsbuild {
     :builds [{
-      :source-paths ["test-cljs"]
+      :source-paths ["src" "tests"]
       :compiler {
         :output-to "output/main.js"
         :optimizations :advanced
