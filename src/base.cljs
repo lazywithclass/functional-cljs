@@ -6,3 +6,8 @@
 
 (defn ^:export truthy [x]
   (and (not (= x false))) (existy x))
+
+(defn ^:export do-when [cond action]
+  (if (truthy cond)
+    (action)
+    undefined))
