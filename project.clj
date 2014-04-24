@@ -8,6 +8,7 @@
   :cljsbuild {
     :builds [{
       :source-paths ["src" "tests"]
+      :notify-command ["node" "output/main.js"]
       :compiler {
         :output-to "output/main.js"
         :optimizations :advanced
