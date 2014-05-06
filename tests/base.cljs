@@ -7,8 +7,14 @@
 (deftest answer
   (is (= 42 (+ 1 41))))
 
+(deftest identity
+  (is (base/identity 42) 42))
+
 (deftest truthy-true
   (is (base/truthy true)))
+
+(deftest truthy-false
+  (is (not (base/truthy false))))
 
 (deftest existy-42
   (is (base/existy 42)))
@@ -20,7 +26,7 @@
   (is (base/do-when true (fn [] true))))
 
 (deftest do-when-false-case
-  (is undefined (base/do-when false (fn [] true))))
+  (is (not (base/do-when false (fn [] true)))))
 
 (deftest do-when-return-value
   (is 42 (base/do-when true (fn [] 42))))
