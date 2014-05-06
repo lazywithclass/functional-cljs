@@ -9,5 +9,5 @@
 
 (defn ^:export do-when [cond action]
   (if (truthy cond)
-    (action)
-    undefined))
+    (action)))
+
