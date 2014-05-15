@@ -31,4 +31,7 @@
 (deftest do-when-return-value
   (is 42 (base/do-when true (fn [] 42))))
 
+(deftest compl
+  (is true ((base/compl base/identity) false)))
+
 (set! *main-cli-fn* t/run-all-tests)

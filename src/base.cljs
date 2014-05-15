@@ -12,3 +12,6 @@
   (if (truthy cond)
     (action)
     undefined))
+
+(defn ^:export compl [predicate]
+  (fn [& rest] (not (predicate rest))))
